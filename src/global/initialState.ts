@@ -284,6 +284,10 @@ export const INITIAL_GLOBAL_STATE: GlobalState = {
     byChatId: {},
   },
 
+  ton: {
+    byChatId: {},
+  },
+
   byTabId: {},
 
   archiveSettings: {
