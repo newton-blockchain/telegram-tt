@@ -2483,6 +2483,17 @@ export interface ActionPayloads {
     chatId: string;
     messageId: number;
   };
+
+  // TON
+  requestTonAddress: WithTabId | undefined;
+  shareTonAddress: {
+    requesterId: string;
+    requestedAt: number;
+  } & WithTabId;
+  saveTonAddress: {
+    chatId: string;
+    address: string;
+  };
 }
 
 export interface RequiredActionPayloads {
